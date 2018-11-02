@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Browserify Boilerplate</title>
+    <title>Contact List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
+    <h1>Fill Out Your Information</h1>
+
+    <fieldset>
+        <section id="name_box">
+            <label for="name_box">Name:</label>
+            <input id="name_box" name="name" type="text" autofocus placeholder="Name" />
+        </section>
+
+        <section id="number_box">
+            <label for="number_box">Phone Number:</label>
+            <input id="number_box" name="number" type="text" autofocus placeholder="Phone Number" />
+        </section>
+
+        <section id="address_box">
+            <label for="address_box">Address:</label>
+            <input id="address_box" name="address" type="text" autofocus placeholder="Address" />
+        </section>
+    </fieldset>
+    <button id="save">Save</button>
+
+    <h1>Contact List</h1>
     <article class="output">
 
     </article>
 
     <script src="bundle.js"></script>
 </body>
+
 </html>
