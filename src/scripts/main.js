@@ -11,5 +11,7 @@
 import makeContactComponent from "./contactList.js"
 import renderContactEntry from "./contactList.js"
 import contactValues from "./ContactForm.js"
+import contactCollection from "./contactCollection"
 
 
+console.log(contactCollection)

@@ -32,7 +32,7 @@ let contactCollection = {
     }
   }
   // })
-  console.log(contactCollection)
+
 }
 
 export default contactCollection
