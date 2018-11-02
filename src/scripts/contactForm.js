@@ -2,7 +2,7 @@
 
 import contactCollection from "./contactCollection"
 
-document.getElementById("save").addEventListener("click", contactValues)
+
 
 function contactValues() {
   let name = document.getElementById("name").value
@@ -14,16 +14,20 @@ function contactValues() {
     number: number,
     address: address
   }
+  return savedContact
+}
 
-  console.log(savedContact)
 
-  fetch("http://localhost:8088/entries", {
+  function contactPost(entry) {fetch("http://localhost:8088/entries", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify(savedContact)
+    body: JSON.stringify(entry)
   })
 }
 
-export default contactValues
+document.getElementById("save").addEventListener("click", function () {
+  contactPost(contactValues())
+})
+

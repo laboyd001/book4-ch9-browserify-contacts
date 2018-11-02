@@ -15,3 +15,5 @@ import contactCollection from "./contactCollection"
 
 
 console.log(contactCollection)
+console.log(contactValues)
+

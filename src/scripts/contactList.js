@@ -1,5 +1,5 @@
 // A ContactList component that displays all contacts. It should import the Contact component and the ContactCollection component.
-import API from "./contactCollection"
+import contactCollection from "./contactCollection"
 
 const container = document.querySelector(".output")
 
