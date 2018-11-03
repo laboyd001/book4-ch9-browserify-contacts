@@ -8,11 +8,8 @@ class ContactDetails {
     this.number = number
     this.address = address
   }
-
-  toString () {
-    return `${this.name} ${this.number} ${this.address}`
-  }
 }
 
 const contact = (name, number, address) => new ContactDetails(name, number, address)
+
 export default contact
