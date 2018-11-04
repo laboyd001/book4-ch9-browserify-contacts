@@ -2,14 +2,13 @@
 
 
 
-class ContactDetails {
-  constructor (name, number, address) {
-    this.name = name
-    this.number = number
-    this.address = address
+let parsedContacts = (entry) => {
+  return `
+      <br><br>
+        <p>Name: ${entry.name}</p>
+        <p>Number: ${entry.number}</p>
+        <p>Address: ${entry.address}</p>
+      <br><br>
+`
   }
-}
-
-const contact = (name, number, address) => new ContactDetails(name, number, address)
-
-export default contact
+  export default parsedContacts

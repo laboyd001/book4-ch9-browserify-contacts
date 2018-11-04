@@ -2,32 +2,23 @@
 
 import contactCollection from "./contactCollection"
 
-
-
-function contactValues() {
-  let name = document.getElementById("name").value
-  let number = document.getElementById("number").value
-  let address = document.getElementById("address").value
+function saveForm() {
+  let nameBox = document.getElementById("name_box").value
+  let numberBox =
+    document.getElementById("number_box").value
+  let addressBox =
+    document.getElementById("address_box").value
 
   let savedContact = {
-    name: name,
-    number: number,
-    address: address
+    name: nameBox,
+    number: numberBox,
+    address: addressBox
   }
-  return savedContact
+
+
+
+  contactCollection.addContact(savedContact)
+  console.table(savedContact)
 }
 
-
-  function contactPost(entry) {fetch("http://localhost:8088/entries", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(entry)
-  })
-}
-
-document.getElementById("save").addEventListener("click", function () {
-  contactPost(contactValues())
-})
-
+export default saveForm
