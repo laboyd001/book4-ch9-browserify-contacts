@@ -1,7 +1,7 @@
 // A Contact component that displays a person's name, phone number, and address.
 
 
-
+// function stored in parsedContacts that returns a HTML template
 let parsedContacts = (entry) => {
   return `
       <br><br>
