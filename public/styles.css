@@ -1,5 +1,47 @@
+body {
+  background-image: url(https://images.pexels.com/photos/1459/street-car-vehicle-blur.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+
+}
+
+
+h1{
+  text-align: center;
+}
+
 fieldset {
+  background-color: rgb(224, 98, 98, .85);
+  border-radius: 15px;
   display: flex;
-  flex-direction: column;
-  border: 1px solid red;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+fieldset div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#save {
+  margin: auto;
+  display: block;
+}
+
+.output p{
+  display: flex;
+  justify-content: center;
+  align-items: column;
+  font-size: 20px;
 }
